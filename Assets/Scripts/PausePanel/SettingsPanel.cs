@@ -54,7 +54,7 @@ public class SettingsPanel : MonoBehaviour
             Screen.fullScreen = true;
             checkFullScreen.SetActive(true);
         }
-        else
+        if (Screen.fullScreen)
         {
             Screen.fullScreen = false;
             checkFullScreen.SetActive(false);

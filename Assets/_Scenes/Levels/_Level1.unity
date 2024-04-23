@@ -1422,6 +1422,26 @@ PrefabInstance:
       propertyPath: m_Value
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 2000143715454525848, guid: cdb2168e62f744945922a487dda4e66d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000143715454525848, guid: cdb2168e62f744945922a487dda4e66d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2731552028874164557, guid: cdb2168e62f744945922a487dda4e66d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2731552028874164557, guid: cdb2168e62f744945922a487dda4e66d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2731552028874164557, guid: cdb2168e62f744945922a487dda4e66d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6531443243124445827, guid: cdb2168e62f744945922a487dda4e66d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3597,6 +3617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playStart: 1
+  panelPrlogue: {fileID: 743154917}
   sprites:
   - {fileID: 21300000, guid: 021d921761c5b0247ac5dbb5d4b9b95a, type: 3}
   - {fileID: 21300000, guid: 2c2649f70ca45db419487712f7ae34ab, type: 3}

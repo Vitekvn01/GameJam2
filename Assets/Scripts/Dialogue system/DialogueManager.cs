@@ -101,11 +101,12 @@ public class DialogueManager : SingletonBase<DialogueManager>
 
         if (_dialogCurrentList.Count > 0)
         {
-            if (index + 1 >= _dialogCurrentList.Count)
+            if (index + 1 == _dialogCurrentList.Count)
             {
-                index = 0;
                 EndDialogueEvent.Invoke();
-                ExitDisableDialoguePanel();
+                _dialoguePanel.SetActive(false);
+                Debug.Log(index);
+
             }
             else
             {

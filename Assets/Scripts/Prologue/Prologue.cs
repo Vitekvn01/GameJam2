@@ -10,6 +10,8 @@ public class Prologue : MonoBehaviour
 {
     [SerializeField] private bool playStart;
 
+    [SerializeField] private GameObject panelPrlogue;
+
     [SerializeField] private List<Sprite> sprites = new List<Sprite>();
     [SerializeField] private List<string> strings = new List<string>();
     [SerializeField] private List<AudioClip> audioClip = new List<AudioClip>();
@@ -26,11 +28,11 @@ public class Prologue : MonoBehaviour
 
     private void Start()
     {
-        gameObject.SetActive(false);
+        panelPrlogue.SetActive(false);
         audioSource = GetComponent<AudioSource>();
         if (playStart)
         {
-            gameObject.SetActive(true);
+            panelPrlogue.SetActive(true);
             DrawAndPlay();
             audioMixerMusic.SetFloat("MasterVolume", -25);
         }
@@ -56,15 +58,17 @@ public class Prologue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            panelPrlogue.SetActive(false);
             audioMixerMusic.SetFloat("MasterVolume", -10);
             EndPrologue.Invoke();
+            gameObject.SetActive(false);
         }
     }
 
     public void StartPrologue()
     {
-        gameObject.SetActive(true);
+        index = 0;
+        panelPrlogue.SetActive(true);
         DrawAndPlay();
         audioMixerMusic.SetFloat("MasterVolume", -25);
     }

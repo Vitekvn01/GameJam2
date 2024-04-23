@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 public class mainMenuLogic : MonoBehaviour
 {
     public GameObject settingsPanel;
+    [SerializeField] private GameObject creditsPanel;
 
     private void Start()
     {
@@ -24,9 +25,9 @@ public class mainMenuLogic : MonoBehaviour
     {
         settingsPanel.SetActive(!settingsPanel.activeSelf);
     }
-    public void titrs()
+    public void creditsButton()
     {
-        // пока ничего
+        creditsPanel.SetActive(creditsPanel);
     }
 
     public void exitButton()

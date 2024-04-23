@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 1424757729}
+  creditsPanel: {fileID: 5701264664732422568}
 --- !u!1001 &5701264664732422567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -393,6 +394,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1893409947}
+    - target: {fileID: 5701264665162296061, guid: 4e5a1ef23c200154c8dfdae52511783b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: creditsButton
+      objectReference: {fileID: 0}
     - target: {fileID: 5701264665555937052, guid: 4e5a1ef23c200154c8dfdae52511783b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -499,3 +504,8 @@ PrefabInstance:
       objectReference: {fileID: 1893409947}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e5a1ef23c200154c8dfdae52511783b, type: 3}
+--- !u!1 &5701264664732422568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6302275405031906615, guid: 4e5a1ef23c200154c8dfdae52511783b, type: 3}
+  m_PrefabInstance: {fileID: 5701264664732422567}
+  m_PrefabAsset: {fileID: 0}
