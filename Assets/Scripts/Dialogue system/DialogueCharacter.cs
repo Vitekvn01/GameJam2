@@ -13,6 +13,10 @@ public struct Dialog
 
 public class DialogueCharacter : MonoBehaviour
 {
+
+    [SerializeField] private bool isLockInteraction;
+    public bool IsLockIisLockInteraction => isLockInteraction;
+
     [SerializeField] private List<Dialog> dialogList = new List<Dialog>();
     [SerializeField] private UnityEvent startDialogue;
     [SerializeField] private UnityEvent endDialogue;
@@ -31,6 +35,16 @@ public class DialogueCharacter : MonoBehaviour
         SubscriptionEndDialogueEvent();
         DialogueManager.Instance.StartDialogue(dialogList, _character.Nickname);
         SubscriptionExitDialogueEvent();
+    }
+
+    public void isUnlockInteraction()
+    {
+        isLockInteraction = false;
+    }
+
+    public void islockInteraction()
+    {
+        isLockInteraction = true;
     }
 
     private void SubscriptionStartDialogueEvent()

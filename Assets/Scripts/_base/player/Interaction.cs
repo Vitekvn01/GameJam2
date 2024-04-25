@@ -25,14 +25,19 @@ public class Interaction : MonoBehaviour
             if (hit.collider != null && hit.collider.GetComponent<DialogueCharacter>() != null)
             {
                 DialogueCharacter character = hit.collider.GetComponent<DialogueCharacter>();
-                _interaction = true;
 
-                if (Input.GetKeyDown(KeyCode.F))
+                if (character.IsLockIisLockInteraction != true)
                 {
-                    Debug.Log("взаимодейсвие произошло с" + hit.collider.name);
-                    character.StartDialogue();
-                    _panelInteraction.SetActive(false);
+                    _interaction = true;
+
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        Debug.Log("взаимодейсвие произошло с" + hit.collider.name);
+                        character.StartDialogue();
+                        _panelInteraction.SetActive(false);
+                    }
                 }
+                
             }
             else _interaction = false;
         }

@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4291465533599028916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9161519195085687735}
+  - component: {fileID: 6094758253563846011}
+  - component: {fileID: 63836449246179900}
+  - component: {fileID: 63836449246179901}
+  - component: {fileID: 4901094574482605673}
+  m_Layer: 0
+  m_Name: Charly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9161519195085687735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291465533599028916}
+  m_LocalRotation: {x: -0, y: -0.36132026, z: -0, w: 0.93244183}
+  m_LocalPosition: {x: -43.16, y: 0.5000081, z: 48.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2874808288416534921}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -42.363, z: 0}
+--- !u!136 &6094758253563846011
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291465533599028916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.7744118
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.3872059, z: 0}
+--- !u!114 &63836449246179900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291465533599028916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34475fc81ac8f1f4c97904d12f83fd20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\u0427\u0430\u0440\u043B\u0438"
+--- !u!114 &63836449246179901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291465533599028916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8035873359578e74dbd22d42da741c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLockInteraction: 0
+  dialogList:
+  - _textDialog: "\u0413\u0443\u0441\u0442\u0430\u0432, \u0432\u043E\u0442 \u0442\u044B
+      \u0433\u0434\u0435. \u0423 \u043C\u0435\u043D\u044F \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F
+      \u043F\u043B\u0430\u043D \u043A\u0430\u043A \u0438\u0437\u0431\u0430\u0432\u0438\u0442\u044C\u0441\u044F
+      \u043E\u0442 \u041D\u044D\u043A\u0435\u0440\u0430"
+    _answers:
+    - "\u0423\u0434\u0438\u0432\u0438"
+    - "\u041D\u0443 \u0438 \u043A\u0430\u043A \u0436\u0435?"
+  - _textDialog: "\u0412\u0447\u0435\u0440\u0430 \u044F \u0431\u044B\u043B \u0432
+      \u0433\u043E\u0440\u043E\u0434\u0435, \u0438 \u0443\u043A\u0440\u0430\u043B
+      \u043E\u0442\u0442\u0443\u0434\u0430 \u043D\u0430\u0431\u043E\u0440 \u043E\u0442\u043C\u044B\u0447\u0435\u043A."
+    _answers:
+    - "\u0418 \u043A\u0430\u043A \u044D\u0442\u043E \u043F\u043E\u043C\u043E\u0436\u0435\u0442
+      \u043D\u0430\u043C \u0432\u044B\u0433\u043D\u0430\u0442\u044C \u041D\u044D\u043A\u0435\u0440\u0430?"
+    - "\u041D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
+  - _textDialog: "\u041D\u044D\u043A\u0435\u0440 \u0432\u0435\u0434\u044C \u043D\u0435
+      \u0432\u044B\u0445\u043E\u0434\u0438\u0442 \u0438\u0437 \u0441\u0432\u043E\u0435\u0433\u043E
+      \u043A\u0430\u0431\u0438\u043D\u0435\u0442\u0430, \u0432\u0435\u0434\u044C
+      \u0442\u0430\u043A? \u0421 \u043E\u0442\u043C\u044B\u0447\u043A\u043E\u0439
+      \u043C\u044B \u043F\u043E\u043F\u0430\u0434\u0451\u043C \u043A \u043D\u0435\u043C\u0443
+      \u0432 \u043A\u0430\u0431\u0438\u043D\u0435\u0442, \u043F\u043E\u0431\u044C\u0451\u043C
+      \u0435\u0433\u043E, \u0438 \u043E\u043D \u0443\u0431\u0435\u0436\u0438\u0442
+      \u043F\u043E\u0434\u0436\u0430\u0432 \u0445\u0432\u043E\u0441\u0442."
+    _answers:
+    - "\u041F\u043B\u0430\u043D \u043D\u0430\u0434\u0451\u0436\u043D\u044B\u0439
+      \u043A\u0430\u043A \u0448\u0432\u0435\u0439\u0446\u0430\u0440\u0441\u043A\u0438\u0435
+      \u0447\u0430\u0441\u044B.."
+    - "\u0414\u0430 \u0442\u044B \u0441\u0442\u0440\u0430\u0442\u0435\u0433!"
+  - _textDialog: "\u0415\u0441\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u0432\u0435
+      \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B: \u043E\u0445\u0440\u0430\u043D\u0430
+      \u043D\u0430 \u0432\u0445\u043E\u0434\u0435 \u0438 \u043C\u044B \u043D\u0435
+      \u0437\u043D\u0430\u0435\u043C \u0433\u0434\u0435 \u0435\u0433\u043E \u043A\u0430\u0431\u0438\u043D\u0435\u0442.
+      \u0421\u043D\u0430\u0447\u0430\u043B\u0430 \u0440\u0430\u0437\u0431\u0435\u0440\u0451\u043C\u0441\u044F
+      \u0441 \u043A\u0430\u0431\u0438\u043D\u0435\u0442\u043E\u043C. \u0422\u0430\u043A\u0441
+      \u0433\u043E\u0432\u043E\u0440\u0438\u043B, \u0447\u0442\u043E \u0437\u0430\u0441\u0442\u0430\u043B
+      \u043A\u0430\u043A \u043E\u0445\u0440\u0430\u043D\u043D\u0438\u043A \u043E\u0431\u044A\u044F\u0441\u043D\u044F\u0435\u0442
+      \u043D\u043E\u0432\u0438\u0447\u043A\u0443 \u043A\u0430\u043A \u0432 \u0441\u043B\u0443\u0447\u0430\u0435
+      \u043F\u0440\u043E\u0438\u0441\u0448\u0435\u0441\u0442\u0432\u0438\u0439 \u043F\u043E\u043F\u0430\u0441\u0442\u044C
+      \u043A \u041D\u044D\u043A\u0435\u0440\u0443."
+    _answers:
+    - "\u0422\u0430\u043A\u0441 \u043F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A
+      \u043D\u0430\u043C \u0442\u043E\u0447\u043D\u043E \u043D\u0435 \u043F\u043E\u043C\u043E\u0436\u0435\u0442."
+    - "\u0411\u043E\u044E\u0441\u044C \u043D\u0430\u043C \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
+      \u043D\u0435\u043C\u0430\u043B\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+      \u0447\u0442\u043E\u0431\u044B \u0422\u0430\u043A\u0441 \u043D\u0430\u043C
+      \u043F\u043E\u043C\u043E\u0433."
+  - _textDialog: 
+    _answers:
+    - "\u042F \u0437\u043D\u0430\u044E. \u041F\u043E\u0439\u0434\u0451\u043C \u0443\u0436\u0435
+      \u043A \u0422\u0430\u043A\u0441\u0443 \u0438 \u043D\u0430\u0447\u043D\u0451\u043C "
+  startDialogue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 63836449246179900}
+        m_TargetAssemblyTypeName: Character, Assembly-CSharp
+        m_MethodName: AnimationPlayTalk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  endDialogue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 63836449246179900}
+        m_TargetAssemblyTypeName: Character, Assembly-CSharp
+        m_MethodName: AnimationPlayIdle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneHelper, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  exitDialogue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 63836449246179900}
+        m_TargetAssemblyTypeName: Character, Assembly-CSharp
+        m_MethodName: AnimationPlayIdle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &4901094574482605673
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291465533599028916}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+  m_Controller: {fileID: 9100000, guid: ccde46ed301ece24cbe0ab8e583b2b87, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!1001 &2337341360154605154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9161519195085687735}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+      propertyPath: m_Name
+      value: monke3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+--- !u!4 &2874808288416534921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96d72e0c06988f644b2c841c5a1b8b36, type: 3}
+  m_PrefabInstance: {fileID: 2337341360154605154}
+  m_PrefabAsset: {fileID: 0}

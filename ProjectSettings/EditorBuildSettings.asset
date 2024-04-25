@@ -9,6 +9,27 @@ EditorBuildSettings:
     path: Assets/_Scenes/_MainMenu.unity
     guid: e9b066ba423739a47a248f6b355417e8
   - enabled: 1
+    path: Assets/_Scenes/Levels/_Level1.unity
+    guid: 172e1b6ab1d6a0b4cb6f4bdfee39e9bf
+  - enabled: 1
+    path: Assets/_Scenes/Levels/_Level2.unity
+    guid: e297266fc38c4fd40b1b1f0056877c3f
+  - enabled: 1
+    path: Assets/_Scenes/MiniGames/MemoryCards1.unity
+    guid: 2af00c8d36dd35d4d8be4933894ef81c
+  - enabled: 1
+    path: Assets/_Scenes/MiniGames/MemoryCards2.unity
+    guid: d2e4a541208f8854ab67914a5aebd1c3
+  - enabled: 1
+    path: Assets/_Scenes/MiniGames/MemoryCards3.unity
+    guid: f1f6844a38c54fb43a763d15135283bd
+  - enabled: 1
+    path: Assets/_Scenes/Levels/_Level3.unity
+    guid: fb0f38d55a963bb4f8efcf4df33e2b96
+  - enabled: 1
+    path: Assets/_Scenes/Levels/_Level4.unity
+    guid: 6f9e736bfc0906b44ab2e7520558a4a8
+  - enabled: 0
     path: Assets/_Scenes/_BuildScene.unity
     guid: 36066b8b2d5929a4a87b4dc74bb4d199
   m_configObjects: {}

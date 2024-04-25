@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - settingsPanel
+  - Card
   layers:
   - Default
   - TransparentFX

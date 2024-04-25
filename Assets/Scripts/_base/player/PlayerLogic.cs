@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class PlayerLogic : MonoBehaviour
 {
-    public int score = 0; // кол-во бананов
-    public TextMeshProUGUI textScore;
-
     [SerializeField] private float speed = 150.0f; // скорость
     [SerializeField] private float rotationSpeed = 120.0f; // скорость поворота
     [SerializeField] private float jumpForce = 10.0f; // высота прыжка
@@ -21,20 +18,30 @@ public class PlayerLogic : MonoBehaviour
     private float mouseY;
     private bool isJumping;
 
+    [SerializeField] private GameObject ViewMonkey;
+    [SerializeField] private GameObject ViewSecretCustom;
+
     private Animator animator;
+    [SerializeField] private RuntimeAnimatorController controllerAvatarSecretCustom;
+    [SerializeField] private Avatar avatarSecretCustom;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-
         rb = GetComponent<Rigidbody>();
         isJumping = false;
         jumpForce *= rb.mass;
-        updateBananaScore();
     }
 
     private void Update()
     {
+        if (ScoreManager.Instance.SecretCustomOpen)
+        {
+            animator.runtimeAnimatorController = controllerAvatarSecretCustom;
+            ViewMonkey.SetActive(false);
+            ViewSecretCustom.SetActive(true);
+            animator.avatar = avatarSecretCustom;
+        }
         mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
         mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
     }
@@ -65,16 +72,7 @@ public class PlayerLogic : MonoBehaviour
         transform.Rotate(Vector3.up * Time.fixedDeltaTime * rotatiomDir * rotationSpeed);
     }
 
-    public void BananaCollect()
-    {
-        score++;
-        updateBananaScore();
-    }
 
-    void updateBananaScore()
-    {
-        textScore.text = "" + score.ToString();
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
